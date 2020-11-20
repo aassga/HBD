@@ -1,4 +1,4 @@
-## 1.moustache 建置全新 Vue CLI 專案
+## 1.HBD 建置全新 Vue CLI 專案
   ```
   $ npm install -g @vue/cli 
   $ vue create moustache
@@ -27,6 +27,24 @@
   - SASS 加入 Vue cli 專案
     ```
     $ npm install sass-loader node-sass --save-dev
+    ```
+  - JSON-SERVER 加入 Vue cli 專案(建立免費 json server運行指令)
+    ```
+    $ npm install -g json-server
+
+    運行
+
+    json-server --watch db.json ( cmd下指令 )
+
+    ```
+  - 設定 WORKSPACE SETTINGS  
+    ```
+    檔案 --> 喜好設定 --> 設定 --> 
+    搜尋 live server config --> 
+    ignore files setting --> 
+    加上 "data.josn" 在底層  
+    用意 畫面更新使用
+    ```
 ## 4.組件規劃
   ```
   header、content、footer、app_btn
@@ -36,3 +54,33 @@
   下載區域 拆出成元件app_btn
   資料傳遞串聯化
   ```
+## 6.釐清 mounted , methods 用法含意
+  - axios RESTful API 串接導入方法
+    ```
+    使用 v-on:click="事件名稱" 技術
+    ```
+  -- axios.get  
+    ```
+    axios.get(url).then((res) =>
+      console.log(res)
+    )
+    ```
+  -- axios.post
+      ```
+      if(!this.input) return false ( input去頭尾空白****重要 )
+
+      axios.post(url,{
+        送出資料: this.(v-model 事件綁定)
+      }).then((res)=>{
+        this.(v-model.trim 事件綁定) = '' //更新 輸入 .trim = 去頭尾空白
+        this.contentes.push(res.data) //放入 data 資料
+      })
+      ```
+  -- axios.delete (刪除需要加編號id)   
+      ```
+      let target = this contents(index)
+      v-on:click="事件名稱(XXX.id)"
+      axios.delete(url/${id}).then((res)=>{
+        this.contents.splice(index, 1)
+      })
+      ```

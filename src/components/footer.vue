@@ -11,12 +11,11 @@
             li.small(v-for="(item,i) in traval" :key="i.traval")
               a(target='_blank' href='#') {{ item.name }}
 
-        .col-6.col-xl-3.mb-5.mb-xl-0
+        .col-6.col-xl-2.mb-5.mb-xl-0
           span(v-text="other" :class="hlistObject")
           ul(:class="flinkObject")
             li.small(v-for="(item,i) in features" :key="i.features")
               a(href='#') {{ item.name }}
-              
         .col-12.col-xl-4.mb-5.mb-xl-0
           p 下載 HTD App
 
@@ -41,7 +40,7 @@ export default {
   data() {
     return {
       wellcome:"歡迎來到 HTD 嘎嘎旅遊去 ----- Happy Traval Date 請盡情瀏覽",
-      themesberg:"認識嘎嘎旅遊",
+      themesberg:"認識嘎旅遊",
       other:"旅客服務",
       Copyright:"Copyright © 2020 HTD . All rights reserved.",
       traval:[
@@ -55,8 +54,8 @@ export default {
       features:[
         { name:'熱門打卡景點' },
         { name:'推薦行程' },
-        { name:'' },
-        { name:'' },
+        { name:'常見問題' },
+        { name:'退費說明' },
       ],
       hlistObject:{
         'h6': true, 
