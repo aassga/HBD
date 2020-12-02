@@ -84,3 +84,7 @@
         this.contents.splice(index, 1)
       })
       ```
+## 6.新增 header 組件以及按鈕 btn 組件設定
+  ```
+  
+  ```
