@@ -1,22 +1,22 @@
 <template lang="pug">
   footer.footer.pb-5.bg-primary.text-white.pt-9.mt-n9
     .container
-      .row.mt-6
-        .col-xl-3.mb-3.mb-xl-0
-          img.mb-3(src='../assets/treelogo.png' height='' alt='treelogo')
+      .row.pt-5
+        .col-xl-3.mb-3
+          img.mb-3.img-fluid(:src="flogo" height='' alt='treelogo' )
           span.small.text-secondary {{ wellcome }}
-        .col-6.col-xl-2.mb-5.mb-xl-0
+        .col-6.col-xl-2.mb-5
           span(v-text="themesberg" :class="hlistObject")
           ul(:class="flinkObject")
             li.small(v-for="(item,i) in traval" :key="i.traval")
               a(target='_blank' href='#') {{ item.name }}
 
-        .col-6.col-xl-2.mb-5.mb-xl-0
+        .col-6.col-xl-2.mb-5
           span(v-text="other" :class="hlistObject")
           ul(:class="flinkObject")
             li.small(v-for="(item,i) in features" :key="i.features")
               a(href='#') {{ item.name }}
-        .col-12.col-xl-4.mb-5.mb-xl-0
+        .col-12.col-xl-4.mb-5
           p 下載 HTD App
 
           //app download
@@ -42,6 +42,7 @@ export default {
       wellcome:"歡迎來到 HTD 嘎嘎旅遊去 ----- Happy Traval Date 請盡情瀏覽",
       themesberg:"認識嘎旅遊",
       other:"旅客服務",
+      flogo:require('../assets/treelogo.png'),
       Copyright:"Copyright © 2020 HTD . All rights reserved.",
       traval:[
         { name:'關於我們' },
@@ -97,4 +98,5 @@ export default {
           &:hover 
             color: #c33c54
             transition: 0.8s
+
 </style>
