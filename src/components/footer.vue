@@ -39,7 +39,7 @@ export default {
   },
   data() {
     return {
-      wellcome:"歡迎來到 HTD 嘎嘎旅遊去 ----- Happy Traval Date 請盡情瀏覽",
+      wellcome:"歡迎來到 Travel ---- 請盡情瀏覽盡情觀賞",
       themesberg:"認識嘎旅遊",
       other:"旅客服務",
       flogo:require('../assets/treelogo.png'),
