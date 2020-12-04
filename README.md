@@ -86,6 +86,7 @@
       ```
 ## 6.新增 header 組件以及按鈕 btn 組件設定
   ```
-  header_btn 組件 "import" header
-  
+  header 拆寫為兩區塊元件 保留通道
+  預計使用 prop 去做溝通元件橋梁
+  儲存至 data 資料格式 
   ```
