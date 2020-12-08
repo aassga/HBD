@@ -83,7 +83,7 @@
       this.contents.splice(index, 1)
     })
     ```
-## 6.新增 header 組件以及按鈕 btn 組件設定
+## 7.新增 header 組件以及按鈕 btn 組件設定
   ```
   元件佈署 [ 
     1.header 拆寫為兩區塊元件 { 按鈕 Button 元件、Logo 元件 }
@@ -95,5 +95,5 @@
     ```
     _header_btn、_header_logo
     ```
-## 7. content 組件內規劃
+## 8. content 組件內規劃
   - 預計新增 輪播、搜尋、飯店公告.........( 未定數 2020/12/08 ) 
