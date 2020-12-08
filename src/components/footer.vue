@@ -32,7 +32,7 @@
 
 </template>
 <script>
-import appbtn from './app_btn/app_btn.vue'
+import appbtn from './app_btn/_app_btn.vue'
 export default {
   components:{
     appbtn,

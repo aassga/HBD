@@ -16,8 +16,8 @@
 
 </template>
 <script>
-import headerlogo from './header_btn/header_logo.vue'
-import headerbtn from './header_btn/header_btn.vue'
+import headerlogo from './header_btn/_header_logo.vue'
+import headerbtn from './header_btn/_header_btn.vue'
 export default {
   components: {
     headerlogo,

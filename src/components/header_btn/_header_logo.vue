@@ -1,16 +1,16 @@
 <template lang="pug">
   .row.justify-content-center.align-items-center
     .col-sm-2
-      img(:src="svg")
+      img(:src="svg" alt='logo')
     .col-sm-3
       .gov3000_icon
         a(href='#')
-          img(src='https://dszfbyatv8d2t.cloudfront.net/img/icon_gov3000.png' alt)  
+          img(:src="icon_svg" alt='icon')  
     .col-sm-7.row.justify-content-end
       b-nav.font17(v-for="(item,i) in traval" :key="item.traval")
-        b-nav-item.mt-1.font-weight-bold {{ item.cis }}
-        b-nav-item.mt-1.font-weight-bold {{ item.rating }}
-        b-nav-item.mt-1.font-weight-bold {{ item.new }}
+        b-nav-item(:class="fontObject") {{ item.cis }}
+        b-nav-item(:class="fontObject") {{ item.rating }}
+        b-nav-item(:class="fontObject") {{ item.new }}
           span.text-warning.pl-2 {{ item.hotnews }}
         b-nav-item 
           button.btn.btn-sm.btn-info(type='button') {{ login }}
@@ -21,6 +21,7 @@ export default {
   data() {
     return {
       svg:require('../../assets/headerlo.png'),
+      icon_svg:'https://dszfbyatv8d2t.cloudfront.net/img/icon_gov3000.png',
       traval:[
         {
           cis:'品牌旗艦館',
@@ -30,6 +31,10 @@ export default {
         },
       ],
       login:'登入/註冊',
+      fontObject:{
+        'mt-1': true, 
+        'font-weight-bold': true,
+      },
     }
   },
 }

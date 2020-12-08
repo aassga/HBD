@@ -2,12 +2,8 @@
 
 </template>
 <script>
-import swiper from './swiper/_swiper.vue'
-
 export default {
-  components: {
-    swiper,
-  },
+
 }
 </script>
 

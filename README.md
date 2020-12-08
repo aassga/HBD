@@ -1,7 +1,7 @@
 ## 1.HBD 建置全新 Vue CLI 專案
   ```
   $ npm install -g @vue/cli 
-  $ vue create moustache
+  $ vue create HBD
   ```
 ## 2.建立 bootstrap-vue 
   - 專案目錄下輸入
@@ -45,9 +45,9 @@
     加上 "data.josn" 在底層  
     用意 畫面更新使用
     ```
-## 4.組件規劃
+## 4.基本組件規劃
   ```
-  header、content、footer、app_btn
+  header、content、footer
   ```
 ## 5.底部組件化完成
   ```
@@ -85,7 +85,15 @@
     ```
 ## 6.新增 header 組件以及按鈕 btn 組件設定
   ```
-  header 拆寫為兩區塊元件 保留通道
-  預計使用 prop 去做溝通元件橋梁
-  儲存至 data 資料格式 
+  元件佈署 [ 
+    1.header 拆寫為兩區塊元件 { 按鈕 Button 元件、Logo 元件 }
+    2.按鈕規劃為 vue router 官方的路由管理切換分頁
+    3.資料串聯可能使用prop vuex 或是 $emit 方式實作
+  ]
   ```
+  - 開設 header_btn 資料夾存放
+    ```
+    _header_btn、_header_logo
+    ```
+## 7. content 組件內規劃
+  - 預計新增 輪播、搜尋、飯店公告.........( 未定數 2020/12/08 ) 
