@@ -59,31 +59,30 @@
     ```
     使用 v-on:click="事件名稱" 技術
     ```
-  -- axios.get  
+  - axios.get  
     ```
     axios.get(url).then((res) =>
       console.log(res)
     )
     ```
-  -- axios.post
-      ```
-      if(!this.input) return false ( input去頭尾空白****重要 )
-
-      axios.post(url,{
-        送出資料: this.(v-model 事件綁定)
-      }).then((res)=>{
-        this.(v-model.trim 事件綁定) = '' //更新 輸入 .trim = 去頭尾空白
-        this.contentes.push(res.data) //放入 data 資料
-      })
-      ```
-  -- axios.delete (刪除需要加編號id)   
-      ```
-      let target = this contents(index)
-      v-on:click="事件名稱(XXX.id)"
-      axios.delete(url/${id}).then((res)=>{
-        this.contents.splice(index, 1)
-      })
-      ```
+  - axios.post
+    ```
+    if(!this.input) return false ( input去頭尾空白****重要 )
+    axios.post(url,{
+      送出資料: this.(v-model 事件綁定)
+    }).then((res)=>{
+      this.(v-model.trim 事件綁定) = '' //更新 輸入 .trim = 去頭尾空白
+      this.contentes.push(res.data) //放入 data 資料
+    })
+    ```
+  - axios.delete (刪除需要加編號id)   
+    ```
+    let target = this contents(index)
+    v-on:click="事件名稱(XXX.id)"
+    axios.delete(url/${id}).then((res)=>{
+      this.contents.splice(index, 1)
+    })
+    ```
 ## 6.新增 header 組件以及按鈕 btn 組件設定
   ```
   header 拆寫為兩區塊元件 保留通道
