@@ -1,0 +1,158 @@
+{
+  "eventKeyword": [
+    {
+      "keyword_type": "tour",
+      "keyword": "螢火蟲季",
+      "url": "https://www.tripresso.com/search?begin_date=2021-03-16&end_date=2021-05-31&keyword=%E8%B3%9E%E8%9E%A2"
+    },
+    {
+      "keyword_type": "tour",
+      "keyword": "桐花季",
+      "url": "https://www.tripresso.com/search?begin_date=2021-03-31&end_date=2021-06-30&keyword=%E6%A1%90%E8%8A%B1&type=tw"
+    }
+  ],
+  "eventDiscount": [
+    {
+      "sn": "387",
+      "gitfName": "中光電優惠滿8000折100",
+      "type": "3",
+      "amount": "1",
+      "price": "100",
+      "gift_by_passenger": "0",
+      "multiple_price": "",
+      "description": "中光電優惠滿8000折100",
+      "group": "",
+      "exclude_group": "",
+      "tourRule": [
+        {
+          "tags": [
+            "國內旅遊"
+          ]
+        }
+      ],
+      "groupRule": [
+        {
+          "group_tags": [
+            "國內旅遊",
+            "!企業包團"
+          ]
+        }
+      ],
+      "orderRule": [
+        {
+          "minLimitTotalPrice": "8000"
+        }
+      ],
+      "memberRule": [
+        {
+          "cop_code": [
+            "coretronic"
+          ]
+        }
+      ],
+      "giftRule": [],
+      "eventName": "",
+      "support_coin": "0",
+      "limitPrice": "0",
+      "endDate": "2021-08-26 00:00:00"
+    },
+    {
+      "sn": "397",
+      "gitfName": "QNAP 產品不享咖幣優惠",
+      "type": "7",
+      "amount": "1",
+      "price": "0",
+      "gift_by_passenger": "0",
+      "multiple_price": "",
+      "description": "QNAP 產品不享咖幣優惠",
+      "group": "",
+      "exclude_group": "",
+      "tourRule": null,
+      "groupRule": [
+        {
+          "group_tags": [
+            "企業包團"
+          ]
+        }
+      ],
+      "orderRule": null,
+      "memberRule": null,
+      "giftRule": [],
+      "eventName": "",
+      "support_coin": "0",
+      "limitPrice": "0",
+      "endDate": "2022-03-31 23:59:59"
+    }
+  ],
+  "eventPromote": null,
+  "sortRule": [
+    {
+      "name": "精選評分",
+      "data": [
+        {
+          "name": "精選評分",
+          "shortName": "精選",
+          "value": "sp:-1",
+          "formula": ""
+        }
+      ]
+    },
+    {
+      "name": "價格",
+      "data": [
+        {
+          "name": "價格：低至高",
+          "shortName": "價格低",
+          "value": "price:1",
+          "formula": ""
+        },
+        {
+          "name": "價格：高至低",
+          "shortName": "價格高",
+          "value": "price:-1",
+          "formula": ""
+        }
+      ]
+    },
+    {
+      "name": "天數",
+      "data": [
+        {
+          "name": "天數：少至多",
+          "shortName": "天數少",
+          "value": "days:1",
+          "formula": ""
+        },
+        {
+          "name": "天數：多至少",
+          "shortName": "天數多",
+          "value": "days:-1",
+          "formula": ""
+        }
+      ]
+    },
+    {
+      "name": "出發日期",
+      "data": [
+        {
+          "name": "出發日期",
+          "shortName": "出發日",
+          "value": "date:1",
+          "formula": ""
+        }
+      ]
+    }
+  ],
+  "airline": {
+    "AE": "華信航空",
+    "BR": "長榮航空",
+    "B7": "立榮航空",
+    "CX": "國泰航空",
+    "CI": "中華航空",
+    "FE": "遠東航空",
+    "IT": "台灣虎航",
+    "MM": "樂桃航空",
+    "7G": "星悅航空"
+  },
+  "eventGift": []
+}

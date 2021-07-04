@@ -1,12 +1,34 @@
-<template lang="pug">
-
+<template>
+  <div>
+    123
+  </div>
 </template>
 <script>
-import swiper from './swiper/_swiper.vue'
-
+import axios from "axios" 
 export default {
-  components: {
-    swiper,
+  data() {
+    return {
+      searchKey:{
+        idspreadId: '1qYprnANhi5Lmr9ejz55Ae3D662yGOP66zwoTkMkhlok',
+        sheetId : '133963212',
+        disableCache: '1',
+      }
+    }
+  },
+  mounted() {
+    this.getMenuList()
+  },
+  methods: {
+    getMenuList(){
+      const url = `https://www.tripresso.com/api_v2/google_sheet/ajaxGetSheet/?idspread_sheet_id=${this.searchKey.idspreadId}&sheet_id=${this.searchKey.sheetId}&disable_cache=${this.searchKey.disableCache}`;
+      axios.get(url)
+        .then(() => {
+
+        })
+        .catch(() => {
+
+        });
+    }
   },
 }
 </script>
